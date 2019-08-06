@@ -17,7 +17,7 @@ const App = () => {
         // console.log(res)
         setChars(res.data.results)
       })
-      .catch();
+      .catch(error => console.log(error));
   }, [])
   if(!chars) return <h3>oading...</h3>
   return (
