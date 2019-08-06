@@ -19,11 +19,11 @@ const App = () => {
       })
       .catch();
   }, [])
-  if(!chars) return <h3>Loading...</h3>
+  if(!chars) return <h3>oading...</h3>
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {chars.map(char => <CharCard char={char} />)}
+      {chars.map((char, key) => <CharCard char={char} key={key}/>)}
     </div>
   );
 }
