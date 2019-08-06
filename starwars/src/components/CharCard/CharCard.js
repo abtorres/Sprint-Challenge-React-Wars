@@ -8,12 +8,14 @@ const Card = styled.div`
     display: flex;
     border: 2px solid black;
 `;
+
 const Name = styled.h3`
     text-align: center;
     width: 40%;
     align-self: center;
     // border-right: 2px solid black;
 `;
+
 const CharCard = (props) => {
     // console.log(props)
     return (
